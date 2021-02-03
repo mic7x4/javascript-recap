@@ -205,3 +205,17 @@ for(let code in codes){
 // Object copying
 let message = 'Hello world'
 let sentence = message
+
+
+let shineUser = {
+    name:'Shine User',
+    isAdmin:false,
+    email:'shine@gmail.com'
+}
+
+let clone = {}
+
+for(let key in shineUser){
+    shineUser[key] = clone[key]
+}
+console.log(clone);
