@@ -85,4 +85,39 @@ const todos =[
 //     return num1 + num2;
 // }
 
-// 
+// OOP
+// function Person(firstname,lastname,dob,city){
+//     this.firstname = firstname;
+//     this.lastname = lastname;
+//     this.dob = new Date(dob);
+//     this.city = city
+// }
+// Person.prototype.getBirthYear = function(){
+//         return this.dob.getFullYear();  
+// }
+// Person.prototype.getFullName = function () {
+//         return `${this.firstname}  ${this.lastname}`;
+// }
+
+class Person{
+    constructor(firstname,lastname,dob,city){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.dob = new Date(dob);
+        this.city = city
+
+    }
+    getBirthYear(){
+        return this.dob.getFullYear();  
+    }
+    getFullName(){
+        return `${this.firstname}  ${this.lastname}`;
+
+    }
+}
+
+const person1 = new Person('Michael','Crook','30 jun 1993','Musanze');
+const person2 = new Person('Uwimana','karori','June 12 2020','Bugesera');
+console.log([person1.getBirthYear(),person2.getBirthYear()]);
+console.log([person1.getFullName(),person2.getFullName()]);
+console.log(person1);
