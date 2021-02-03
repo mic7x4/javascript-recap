@@ -151,3 +151,57 @@ function onSubmit(e){
         emailInput.value = '';
     }
 }
+// Objects
+const user =  {
+    name:"Ndabaga Michel",
+    age: 40
+}
+user.isAdmin = true
+delete user.age
+let key = 'Likes Birds'
+user[key] = true
+
+let fruit = 'Which fruit to buy'
+let bag = {
+    [fruit]:5
+};
+console.log(bag.apple);
+
+console.log(user);
+
+
+// Property value Shorthand
+function makeUser(name,age){
+    return {
+        name,
+        age
+    }
+}
+
+let user1 = makeUser('Ndabaga Michel', 30);
+console.log(user1);
+
+const magicUser = {
+    name:'Ndabaga Michael',
+    age: 28,
+    isAdmin:false,
+    
+}
+for(name in magicUser){
+    console.log(name);
+}
+
+let codes = {
+    '250':'Rwanda',
+    "256":'Uganda',
+    '255':'Tanzania',
+    '234':'Nigeria'
+}
+
+for(let code in codes){
+    console.log(+code);
+}
+
+// Object copying
+let message = 'Hello world'
+let sentence = message
