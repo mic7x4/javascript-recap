@@ -7,8 +7,21 @@
   </head>
   <body>
     <button id="getText">Get text</button>
-    <button id="getUsers">Get Users</button>
+    <button id="getUsers">Get JSON</button>
+    <button id="getPosts">Get API DATA</button>
     <h1>This is a simple ApiFetch</h1>
+    <hr />
+    <form action="" id="addPost">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" />
+      </div>
+      <div>
+        <label for="body">Body</label>
+        <textarea name="body" id="body"></textarea>
+      </div>
+      <button id="addPost">Add Post</button>
+    </form>
     <div id="output"></div>
   </body>
   <script src="./js/fetchApi.js"></script>
