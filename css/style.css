@@ -41,7 +41,7 @@ header {
   display: block;
 }
 
-#my-form input[type='text'] {
+#my-form input[type="text"] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
@@ -74,4 +74,35 @@ header {
   color: #fff;
   padding: 5px;
   margin: 5px;
+}
+
+/* Numbers Facts */
+.container {
+  width: 500px;
+  margin: 0 auto;
+  background: rgb(16, 82, 223);
+  margin-top: 2rem;
+  color: #fff;
+}
+.number-facts {
+  background: rgb(15, 15, 26);
+}
+.input__number {
+  margin-top: 10px;
+  padding: 12px 30px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+
+.card__body{
+
+}
+#fact{
+  display: none;
+  margin-top: 10px;
+}
+.card__text {
+  color: rgb(222, 225, 228);
 }
